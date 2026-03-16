@@ -1,19 +1,31 @@
 {
   "name": "easyservice-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "EasyService API with Vercel + MongoDB",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "api",
+    "express",
+    "mongodb",
+    "vercel"
+  ],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@vercel/functions": "^2.0.0",
+    "express": "^5.2.1",
+    "mongodb": "^6.12.0",
+    "serverless-http": "^3.2.0"
+  },
   "devDependencies": {
     "@types/node": "^25.5.0",
+    "nodemon": "^3.1.14",
     "typescript": "^5.9.3"
-  },
-  "dependencies": {
-    "express": "^5.2.1"
   }
 }
